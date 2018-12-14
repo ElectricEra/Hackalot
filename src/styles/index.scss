@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.hl-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    z-index: 1000;
+    animation: fadeout 3s;
+
+    .hl-background-text {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        width: 100%;
+        opacity: 0;
+        animation: fadein 3s;
+    }
+}
+
+@keyframes fadein {
+    10% { opacity: 0; }
+    40% { opacity: 1; }
+    60% { opacity: 1; }
+    90% { opacity: 0; }
+}
+
+@keyframes fadeout {
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.hl-header {
+    height: 60px;
+    background: darkgray;
+}
+
+.tooltip {
+    position: fixed;
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+    background: black;
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    z-index: 9999;
+    margin-top: -200px;
+    margin-left: -150px;
+}
+
+nav .brand-logo {
+    padding-left: 10px;
+}
+
+.hl-main-section, .row .col.hl-profile-wrapper, .hl-create-hackathon-wrapper {
+    background: #81d4fa;
+    min-height: 300px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}
+
+.col.hl-create-hackathon-wrapper {
+    padding: 20px;
+
+    & .hl-create-hackathon-edit-fields {
+        padding: 20px;
+        border: 1px solid blue;
+        background: white;
+        margin-bottom: 20px;
+    }
+}
+
+.hl-full-info {
+    margin-top: 20px;
+}
+
+.hl-profile-wrapper img {
+    max-height: 400px;
+}
+
+.hl-profile-bio {
+    font-size: 24px;
+}
+
+.hl-theme-tag {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: gold;
+    font-size: 14px;
+    margin: 10px;
+    padding: 5px 15px
+}
+
+.hl-tags {
+    padding-left: 10px;
+}
+
+.red-star {
+    color: red;
+}
+
+.bigger-text {
+    font-size: 24px;
+}
+
+.big-text {
+    font-size: 18px;
+}
+
+.normal-text {
+    font-size: 14px;
+}
+
+.breaker {
+    height: 20px;
+}
+
+input, label, input::placeholder {
+    color: black!important;
+}
+
+.datepicker {
+    margin: 0 10px!important;
+    width: calc(100% - 20px)!important;
+}
+
+.hl-link {
+    
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.hl-details-link {
+    color: #0277bd;
+}
+
+.hl-hli-wrapper {
+    width: 100%;
+    
+    margin-left: 0px!important;
+    margin-right: 0px!important;
+
+    margin: 10px;
+    background: rgb(253, 251, 251);
+    cursor: pointer;
+
+    .hl-hli-image-wrapper {
+        padding: 0!important;
+        display: inline-block;
+
+        .hl-hli-date-wrapper {
+            background: purple;
+            width: 100%;
+            height: 50px;
+            vertical-align: top;
+        }
+
+        .hl-hli-image {
+            width: auto;
+            height: auto;
+            max-width: 280px;
+        }
+    }
+
+    .hl-hli-text-wrapper {
+        display: inline-block;
+        vertical-align: top;
+
+        .hl-hli-text-title-wrapper {
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .hl-hli-text-description-wrapper {
+            font-size: 14px;
+            margin: 10px;
+        }
+        
+        .hl-hli-text-details-wrapper {
+            font-size: 14px;
+            margin: 10px;
+            color: #0277bd;
+        }
+    }
+}
+
+.hl-hld-wrapper {
+    .hl-hld-text {
+        text-align: center;
+    }
+
+    .hl-hld-date, .hl-hld-month {
+        text-align: center;
+        display: inline-block;
+    }
+
+    .hl-hld-date-wrapper {
+        text-align: center;
+    }
+}
