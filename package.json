@@ -23,9 +23,9 @@
     "babel-preset-react": "^6.24.1"
   },
   "dependencies": {
-    "webpack": "^3.11.0",
-    "express": "^4.16.3",
+    "body-parser": "^1.18.3",
     "css-loader": "^0.28.11",
+    "express": "^4.16.3",
     "firebase": "^5.0.4",
     "node-sass": "^4.11.0",
     "react": "^16.3.1",
@@ -38,6 +38,7 @@
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
     "sass-loader": "^7.1.0",
-    "style-loader": "^0.20.3"
+    "style-loader": "^0.20.3",
+    "webpack": "^3.11.0"
   }
 }
